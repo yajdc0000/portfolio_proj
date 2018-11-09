@@ -1,0 +1,320 @@
+/*global*/
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align: baseline;
+}
+
+html{
+	font-family: sans-serif;
+}
+
+body{
+	width:100%;
+	background-image:url("https://preview.ibb.co/cmCyGL/BG-01.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.wrapper{
+	width:100%;
+	margin: 0 auto;
+}
+
+.clearfix::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+
+h1{
+	color:white;
+	font-size: 48px;
+}
+
+p{
+	color:white;
+	font-size: 16px;
+}
+
+ul{
+	list-style: none;
+	margin-top: 30px;
+}
+
+li{
+	color:white;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+/*nav*/
+
+nav{height: 30px;color: #ffffff;position: fixed;width: 100%;line-height: 50px;top: 0;z-index: 999; background: -webkit-linear-gradient(left, rgba(158,0,0,1) 0%,rgba(158,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(158,0,0,1) 0%,rgba(158,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */}
+nav a:active{text-decoration: none;}
+nav a:hover{text-decoration: none;}
+nav a:visited{text-decoration: none;}
+nav a{text-decoration: none;}
+
+
+.logo_div{float:left;letter-spacing: 0.04em;line-height: 50px;font-size:2.5vw; margin-left: 15vw;margin-top: 1vw;}
+.logo_a{color:white; text-shadow: 6px 6px 9px rgba(0, 0, 0, 20);}
+
+.menu{text-align: center;line-height: 50px;list-style: none; background: -webkit-linear-gradient(left, rgba(158,0,0,1) 0%,rgba(158,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(158,0,0,1) 0%,rgba(158,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */}
+.menu li{display: inline-block; text-shadow: 16px 6px 9px rgba(0, 0, 0, 2);}
+.menu li a{color: #ffffff;padding: 15px;font-size: 1.4vw;}
+.menu li a:hover{background-color: #ff0000 ;transition: all 1s ease;background: #e8491d;color: #ffffff;text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
+.menu li:hover{background-color: #e8491d;transition: all 1s ease;}
+.menu{text-align: center;line-height: 50px;list-style: none;}
+/*DropDown*/
+#dropdown-item1{display: block}
+/* The container <div> - needed to position the dropdown content */
+.dropdown{position: relative;}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {display: none;position: absolute;background-color: #000000;z-index: 1;line-height: 50px;white-space: nowrap;left: -50px;overflow: visible;top: 100%}
+/* Links inside the dropdown */
+.dropdown-content a {color: #ffffff;display: block;line-height: 50px;width: auto;position: relative}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display:inline-block;width: auto}
+
+@media screen and (max-width: 768px) {
+nav{opacity: 0.9; height: 60px;}
+.logo_div{float: none;text-align: center;font-size: 5vw;} 
+.nav-container {position: fixed;top: 50px;left: 0;height: 100%;width: 100%;background: #000000;opacity: 0;transition: all 0.2s ease;white-space: nowrap;z-index: 999;display: none;}
+  .nav-container ul {position: absolute;width: auto}
+  .nav-container ul li {display: block;float: none;width: 100%;text-align: left;margin-bottom: 5px}
+  .nav-container ul li:nth-child(1) a {transition-delay: 0.2s}
+  .nav-container ul li:nth-child(2) a {transition-delay: 0.3s}
+  .nav-container ul li:nth-child(3) a {transition-delay: 0.4s}
+  .nav-container ul li:nth-child(4) a {transition-delay: 0.5s}
+  #dropbtn {transition-delay: 0.6s}  
+  .nav-container ul li:nth-child(6) a {transition-delay: 0.7s}
+  .nav-container ul li {margin-left: 0}
+  .nav-container ul li a{padding: 0px 25px;opacity: 0;color: #ffffff;font-size: 18px;font-weight: 600;transform:translateY(-20px);transition: all 0.2s ease;}
+  /*Arrow*/
+  .arrow{transform: rotate(-90deg);display: inline-block;margin-left: 0.5vw}
+  /*Dropdown*/
+.dropdown-content{position: relative;left: 100%;top: 0px;overflow: visible;width:100%}
+.dropdown-content a{display: inline-block;width: 100%;white-space: nowrap;}   
+/*Hamburger*/  
+  .nav-open {position: fixed;top: 0;left: 10px;display: block;width: 48px;height: 48px;cursor: pointer;z-index: 1;border-radius: 50%}
+  .nav-open i {display: block;width: 20px;height: 2px;background: #ffffff;border-radius: 2px;margin-left: 14px}
+  .nav-open i:nth-child(1) {margin-top: 16px}
+  .nav-open i:nth-child(2) {margin-top: 4px;opacity: 1}
+  .nav-open i:nth-child(3) {margin-top: 4px;}
+  .menu li a{color: #ffffff;padding: 15px;font-size: 1.4vw}
+  header{
+  	margin-top: 18vw !important;
+  	text-align: center !important;
+  }
+}
+
+#nav:checked + .nav-open {transform: rotate(45deg)}
+#nav:checked + .nav-open i {background: #fff;transition: transform 0.2s ease;}
+#nav:checked + .nav-open i:nth-child(1) {transform: translateY(6px) rotate(180deg)}
+#nav:checked + .nav-open i:nth-child(2) {opacity: 0;}
+#nav:checked + .nav-open i:nth-child(3) {transform: translateY(-6px) rotate(90deg)}
+#nav:checked ~ .nav-container {z-index: 2;opacity: 1;display: block}
+#nav:checked ~ .nav-container ul li a {opacity: 1;transform: translateY(0)}
+.hidden{display: none}
+/*#Hamburger*/
+
+/*header*/
+header{
+	margin: 150px 0 200px 0;
+	text-align:center;
+	font-family: roboto;
+}
+header h1{
+	text-shadow: 16px 6px 9px rgba(0, 0, 0, 2);
+	letter-spacing: 5px;
+}
+h3{
+	color: white;
+	text-shadow: 16px 6px 9px rgba(0, 0, 0, 2);
+}
+header p{
+	width:45%;
+	margin:30px auto 0 auto;
+}
+header a{
+	color:#ff4a5e;
+	text-decoration: none;
+}
+header span{
+	font-size: 50px;
+	
+}
+.webdev{
+	font-size: 60px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-timing-function: linear;
+}
+.webdev:hover{
+	
+	background: -webkit-linear-gradient(#fff, #b11717);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.uidesign{
+  font-size: 45px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-text-shadow: 0 0 50px transparent;
+  -moz-text-shadow: 0 0 50px transparent;
+  -ms-text-shadow: 0 0 50px transparent;
+  -o-text-shadow: 0 0 50px transparent;
+  text-shadow: 0 0 50px transparent;
+  /*color: rgba(0, 0, 0, 0.1);*/
+  /*overflow: visible;*/
+}
+.uidesign:hover{
+	  -webkit-text-shadow: 0 0 0px white;
+  -moz-text-shadow: 0 0 0px white;
+  -ms-text-shadow: 0 0 0px white;
+  -o-text-shadow: 0 0 0px white;
+  text-shadow: 0 0 0px white;
+}
+.manualtesting{
+  font-size: 40px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dresearch{
+  font-size: 30px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dataentry{
+	font-size: 25px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*work*/
+.work{
+	text-align: center;
+	width: 100%;
+}
+
+.work div{
+	display: inline-block !important;
+	display: inline !important;
+	/*position:relative;*/
+}
+
+iframe.cp_embed_iframe {
+  	margin: 1%;
+	width:45% !important;
+	display: inline-block !important;
+	display: inline !important;
+	position: relative;
+}
+
+/*whatIDo*/
+.whatIDo{
+	text-align: center;
+	margin: 100px 0 200px 0;
+	position:relative;
+
+}
+.whatIDo h1{
+	color: #13a3fd;
+	text-shadow: 6px 6px 9px rgba(0, 0, 0, 2);
+}
+
+.iAm{
+	color:#434750;
+	font-size: 210px;
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	top:-20px;
+	z-index: -1;
+	font-family: chiller;
+}
+
+/*work 2*/
+.work2{
+	width: 100%
+	text-align:center;
+}
+.work2 a img{
+	margin:1%;
+	width: 92%;
+}
+
+/*footer*/
+footer{
+	text-align: center;
+	margin: 60px 0;
+}
+
+footer p{
+	color:#404348;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 991px){
+	header p{
+		width: 100%;
+	}
+	.work a img{
+		margin: 2%;
+		width: 96%;
+	}
+	.work2 a img{
+		margin: 2%;
+		width: 96%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	header {
+		width: 96%;
+		margin: 30px auto 100px auto;
+		text-align: left;
+	}
+	.whatIDo{
+		text-align: left;
+		width:96%;
+		margin: 70px auto 100px auto;
+	}
+	.iAm{
+		visibility: hidden;
+	}
+	footer{
+		text-align: left;
+		width: 90%
+		margin: 60px auto;
+	}
+}
+
+#welcome-section{
+  height: 50vh;
+}
+
+nav{
+      position: fixed;
+    top: 0;
+}
