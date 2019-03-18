@@ -14,7 +14,7 @@ html{
 
 body{
 	width:100%;
-	background-image:url("https://preview.ibb.co/cmCyGL/BG-01.png");
+	background-image:url("bg_wallpaper.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -153,22 +153,8 @@ header span{
 	
 }
 .webdev{
-	font-size: 60px;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition-timing-function: linear;
-}
-.webdev:hover{
-	
-	background: -webkit-linear-gradient(#fff, #b11717);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-.uidesign{
   font-size: 45px;
-  background: -webkit-linear-gradient(#eee, #333);
+  background: -webkit-linear-gradient(#fff, #b11717);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     -webkit-transition: 0.5s ease-in-out;
@@ -176,38 +162,22 @@ header span{
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  -webkit-text-shadow: 0 0 50px transparent;
-  -moz-text-shadow: 0 0 50px transparent;
-  -ms-text-shadow: 0 0 50px transparent;
-  -o-text-shadow: 0 0 50px transparent;
+  -webkit-text-shadow: 0 0 150px transparent;
+  -moz-text-shadow: 0 0 150px transparent;
+  -ms-text-shadow: 0 0 150px transparent;
+  -o-text-shadow: 0 0 150px transparent;
   text-shadow: 0 0 50px transparent;
   /*color: rgba(0, 0, 0, 0.1);*/
   /*overflow: visible;*/
 }
-.uidesign:hover{
+.webdev:hover{
+	
 	  -webkit-text-shadow: 0 0 0px white;
   -moz-text-shadow: 0 0 0px white;
   -ms-text-shadow: 0 0 0px white;
   -o-text-shadow: 0 0 0px white;
   text-shadow: 0 0 0px white;
-}
-.manualtesting{
-  font-size: 40px;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.dresearch{
-  font-size: 30px;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.dataentry{
-	font-size: 25px;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
 }
 
 /*work*/
