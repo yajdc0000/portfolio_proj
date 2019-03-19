@@ -9,13 +9,13 @@
 }
 
 html{
-	font-family: sans-serif;
+	font-family: 'Changa';font-size: 22px;
 }
 
 body{
 	width:100%;
 	background-image:url("bg_wallpaper.jpg");
-	background-position: top center;
+	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -130,7 +130,7 @@ nav{opacity: 0.9; height: 60px;}
 header{
 	margin: 150px 0 200px 0;
 	text-align:center;
-	font-family: roboto;
+	text-shadow: 2px 2px #795548;
 }
 header h1{
 	text-shadow: 16px 6px 9px rgba(0, 0, 0, 2);
@@ -200,6 +200,10 @@ iframe.cp_embed_iframe {
 	position: relative;
 }
 
+.email{
+	font-size:25px;
+}
+
 /*whatIDo*/
 .whatIDo{
 	text-align: center;
@@ -224,16 +228,6 @@ iframe.cp_embed_iframe {
 	font-family: chiller;
 }
 
-/*work 2*/
-.work2{
-	width: 100%
-	text-align:center;
-}
-.work2 a img{
-	margin:1%;
-	width: 92%;
-}
-
 /*footer*/
 footer{
 	text-align: center;
@@ -253,10 +247,21 @@ footer p{
 		margin: 2%;
 		width: 96%;
 	}
-	.work2 a img{
-		margin: 2%;
-		width: 96%;
+	.work{
+		margin-top:10%;
 	}
+}
+
+@media only screen and (min-width: 800px){
+	.work{
+		margin-top:20%;
+	}
+}
+
+@media only screen and (max-width: 590px){
+.work{
+	margin-top:70%;
+}
 }
 
 @media only screen and (max-width: 768px){
